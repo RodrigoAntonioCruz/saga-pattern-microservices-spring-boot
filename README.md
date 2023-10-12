@@ -17,7 +17,7 @@ No caminho de sucesso, os serviços operam da seguinte forma:
   <img align="center" alt="" src="https://raw.githubusercontent.com/RodrigoAntonioCruz/assets/main/saga.png" />
 </p>
 
-## Fuxo da transação com falha - Ação Compensatória
+## Fuxo da transação com falha - Ação compensatória
 
 Quando ocorre uma falha, por exemplo, durante a validação do pagamento, o sistema segue o caminho de compensação da seguinte forma:
 
