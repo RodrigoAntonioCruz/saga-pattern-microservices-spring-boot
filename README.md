@@ -26,12 +26,11 @@ Quando ocorre uma falha, por exemplo, durante a validação do pagamento, o sist
 2. **INVENTORY**: Consome o tópico com status PAYMENT_FAILED e realiza um ROLLBACK na sua base de dados referente ao estoque da venda. Em seguida, publica um evento no seu tópico com o status ROLLBACK_INVENTORY.
 
 3. **SALE**: Consome o tópico com status ROLLBACK_INVENTORY e realiza o cancelamento imediato da venda. Altera o status da venda na sua base para CANCELED.
-
-Este repositório serve como um exemplo de como implementar o padrão SAGA Coreografado para lidar com transações distribuídas e como usar o Apache Kafka para coordenar eventos entre microsserviços.
 <p align="center">
   <img align="center" alt="" src="https://raw.githubusercontent.com/RodrigoAntonioCruz/assets/main/acp.png" />
 </p>
 
+Este repositório serve como um exemplo de como implementar o padrão SAGA Coreografado para lidar com transações distribuídas e coordenar eventos entre microsserviços.
 
 ### Executando os Microsserviços
 
