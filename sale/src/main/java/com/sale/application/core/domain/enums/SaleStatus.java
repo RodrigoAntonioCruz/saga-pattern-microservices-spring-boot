@@ -27,5 +27,4 @@ public enum SaleStatus {
                 .findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Id do status é inválido: " + id));
     }
-
 }

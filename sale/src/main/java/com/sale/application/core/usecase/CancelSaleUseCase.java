@@ -27,5 +27,4 @@ public class CancelSaleUseCase implements CancelSaleInputPort {
         saleResponse.setStatus(SaleStatus.CANCELED);
         saveSaleOutputPort.save(saleResponse);
     }
-
 }

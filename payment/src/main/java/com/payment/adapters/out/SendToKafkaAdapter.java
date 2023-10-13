@@ -5,7 +5,7 @@ import com.payment.adapters.out.message.SaleMessage;
 import com.payment.application.core.domain.Sale;
 import com.payment.application.core.domain.enums.SaleEvent;
 import com.payment.application.ports.out.SendToKafkaOutputPort;
-import com.payment.config.kafka.KafkaPropertiesConfig;
+import com.payment.configuration.kafka.KafkaPropertiesConfig;
 import lombok.AllArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;

@@ -28,5 +28,4 @@ public class CreateSaleUseCase implements CreateSaleInputPort {
         var saleResponse = saveSaleOutputPort.save(sale);
         sendCreatedSaleOutputPort.send(saleResponse, SaleEvent.CREATED_SALE);
     }
-
 }

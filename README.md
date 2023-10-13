@@ -21,6 +21,31 @@ Para rodar esta aplicação, você deve ter instalado em seu computador:
    <li><a href="https://docs.docker.com/get-started/" target="_blank">Docker</a>
 </ul>
 
+### Executando o projeto
+
+1. Clone ou baixe o projeto do repositório para o seu `Computador`.
+
+2. Navegue até a raíz do diretório do projeto, abra o `terminal e execute o comando:`
+<ul>
+   <li> sudo docker-compose up -d
+   <li> Observação: Durante a criação dos containers será inserida no banco de dados mongodb uma carga inicial com usuários e inventários para teste.
+</ul>
+
+
+3. Após a criação dos containers, importe os projetos para `IDE` de sua escolha e inicialize os três projetos.
+
+4. Agora basta realizar uma chamada rest para o `endpoint:` <a href="http://localhost:8002/v1/api/sales" target="_blank" title="SALES">
+passando no `body` esse payload:
+
+```
+   {
+   "userId": "648f0e568216534e611ecbdf",
+   "productId": "648f0e9a8216534e611ecbe4",
+   "value": 15.00,
+   "quantity": "2"
+   }
+```
+
 ## Fuxo da transação realizada com sucesso
 
 No caminho de sucesso, os serviços operam da seguinte forma:

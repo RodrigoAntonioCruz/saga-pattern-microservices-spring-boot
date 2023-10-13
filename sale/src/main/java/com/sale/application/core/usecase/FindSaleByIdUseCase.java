@@ -20,5 +20,4 @@ public class FindSaleByIdUseCase implements FindSaleByIdInputPort {
         return findSaleByIdOutputPort.find(id)
                 .orElseThrow(() -> new RuntimeException("Venda não encontrada!"));
     }
-
 }

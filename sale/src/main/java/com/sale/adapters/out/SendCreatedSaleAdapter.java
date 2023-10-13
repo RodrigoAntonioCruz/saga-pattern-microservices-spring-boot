@@ -5,7 +5,7 @@ import com.sale.adapters.out.message.SaleMessage;
 import com.sale.application.core.domain.Sale;
 import com.sale.application.core.domain.enums.SaleEvent;
 import com.sale.application.ports.out.SendCreatedSaleOutputPort;
-import com.sale.config.kafka.KafkaPropertiesConfig;
+import com.sale.configuration.kafka.KafkaPropertiesConfig;
 import lombok.AllArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;

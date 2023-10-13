@@ -20,5 +20,4 @@ public class FindInventoryByProductIdUseCase implements FindInventoryByProductId
         return findInventoryByProductIdOutputPort.find(productId)
                 .orElseThrow(() -> new RuntimeException("Estoque não encontrado para este produto!"));
     }
-
 }

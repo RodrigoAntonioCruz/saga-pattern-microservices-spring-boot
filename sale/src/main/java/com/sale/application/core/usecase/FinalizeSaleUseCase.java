@@ -27,5 +27,4 @@ public class FinalizeSaleUseCase implements FinalizeSaleInputPort {
         saleResponse.setStatus(SaleStatus.FINALIZED);
         saveSaleOutputPort.save(saleResponse);
     }
-
 }

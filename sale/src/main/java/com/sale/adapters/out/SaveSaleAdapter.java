@@ -5,17 +5,17 @@ import com.sale.adapters.out.repository.SaleRepository;
 import com.sale.adapters.out.repository.mapper.SaleEntityMapper;
 import com.sale.application.core.domain.Sale;
 import com.sale.application.ports.out.SaveSaleOutputPort;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@AllArgsConstructor
 public class SaveSaleAdapter implements SaveSaleOutputPort {
 
-    @Autowired
-    private SaleRepository saleRepository;
+    private final SaleRepository saleRepository;
 
-    @Autowired
-    private SaleEntityMapper saleEntityMapper;
+    private final SaleEntityMapper saleEntityMapper;
 
     @Override
     public Sale save(Sale sale) {
@@ -23,6 +23,5 @@ public class SaveSaleAdapter implements SaveSaleOutputPort {
         var saleEntityResponse = saleRepository.save(saleEntity);
         return saleEntityMapper.toSale(saleEntityResponse);
     }
-
 }
 

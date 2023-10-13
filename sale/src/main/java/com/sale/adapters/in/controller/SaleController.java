@@ -5,6 +5,7 @@ import com.sale.adapters.in.controller.mapper.SaleRequestMapper;
 import com.sale.adapters.in.controller.request.SaleRequest;
 import com.sale.application.ports.in.CreateSaleInputPort;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,14 +14,13 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
+@AllArgsConstructor
 @RequestMapping("sales")
 public class SaleController {
 
-    @Autowired
-    private CreateSaleInputPort createSaleInputPort;
+    private final CreateSaleInputPort createSaleInputPort;
 
-    @Autowired
-    private SaleRequestMapper saleRequestMapper;
+    private final SaleRequestMapper saleRequestMapper;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -29,5 +29,4 @@ public class SaleController {
         createSaleInputPort.create(saleRequestMapper.toSale(saleRequest));
         log.info("Venda criada com sucesso.");
     }
-
 }
