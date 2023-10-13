@@ -2,7 +2,7 @@
 
 Este repositório contém uma implementação de microsserviços de exemplo que seguem o padrão SAGA Coreografado. Os serviços utilizam Apache Kafka para a coordenação de transações distribuídas. Existem três serviços principais: SALE, INVENTORY e PAYMENT.
 
-## Transação realizada com sucesso
+## Fuxo da transação realizada com sucesso
 
 No caminho de sucesso, os serviços operam da seguinte forma:
 
