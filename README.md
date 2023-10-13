@@ -34,7 +34,7 @@ Para rodar esta aplicação, você deve ter instalado em seu computador:
 
 3. Após a criação dos containers, importe os projetos para `IDE` de sua escolha e inicialize os três projetos.
 
-4. Agora basta realizar uma chamada rest para o `endpoint:` <a href="http://localhost:8002/v1/api/sales" target="_blank" title="SALES">
+4. Agora basta realizar uma chamada rest para o `endpoint:` <a href="http://localhost:8002/v1/api/sales" target="_blank" title="SALES">SALES</a>
 passando no `body` esse payload:
 
 ```
