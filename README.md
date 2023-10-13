@@ -2,6 +2,25 @@
 
 Este repositório contém uma implementação de microsserviços de exemplo que seguem o padrão SAGA Coreografado. Os serviços utilizam Apache Kafka para a coordenação de transações distribuídas. Existem três serviços principais: SALE, INVENTORY e PAYMENT.
 
+<h4>Tecnologias</h4>
+<ul>
+  <li> Java 17
+  <li> Spring Boot 
+  <li> Maven
+  <li> Lombok
+  <li> Docker
+  <li> MongoDB
+  <li> Apache Kafka
+</ul>
+
+### Requisitos
+
+Para rodar esta aplicação, você deve ter instalado em seu computador:
+
+<ul>  
+   <li><a href="https://docs.docker.com/get-started/" target="_blank">Docker</a>
+</ul>
+
 ## Fuxo da transação realizada com sucesso
 
 No caminho de sucesso, os serviços operam da seguinte forma:
