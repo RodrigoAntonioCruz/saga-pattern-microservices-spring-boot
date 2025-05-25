@@ -40,35 +40,35 @@ db3.payments.insertMany([{
                          "userId": "648f0e398216534e611ecbdb",
                          "saleId": "64db5b0f5b23cb57036396c4",
                          "value": "15.00",
-                         "_class": "com.arantes.payment.adapters.out.repository.mapper.entity.PaymentEntity"
+                         "_class": "com.payment.adapters.out.repository.mapper.entity.PaymentEntity"
                       },{
                         _id: ObjectId("64db5b65d374b874394dde08"),
                          "userId": "648f0e398216534e611ecbdb",
                          "saleId": "64db5b0f5b23cb57036396c4",
                          "value": "16.00",
-                         "_class": "com.arantes.payment.adapters.out.repository.mapper.entity.PaymentEntity"
+                         "_class": "com.payment.adapters.out.repository.mapper.entity.PaymentEntity"
                       },{
                         _id: ObjectId("64db5bb5d374b874394dde09"),
                          "userId": "648f0e398216534e611ecbdb",
                          "saleId": "64db5bb22775be4488858995",
                          "value": "25.00",
-                         "_class": "com.arantes.payment.adapters.out.repository.mapper.entity.PaymentEntity"
+                         "_class": "com.payment.adapters.out.repository.mapper.entity.PaymentEntity"
                       },{
                         _id: ObjectId("64db5c53d374b874394dde0a"),
                          "userId": "648f0e398216534e611ecbdb",
                          "saleId": "64db5c532775be4488858997",
                          "value": "8.00",
-                         "_class": "com.arantes.payment.adapters.out.repository.mapper.entity.PaymentEntity"
+                         "_class": "com.payment.adapters.out.repository.mapper.entity.PaymentEntity"
                       },{
                         _id: ObjectId("64e10fcc07786543817be207"),
                          "userId": "648f0e568216534e611ecbdf",
                          "saleId": "64e10fcbaf5009753a1afc42",
                          "value": "15.00",
-                         "_class": "com.arantes.payment.adapters.out.repository.mapper.entity.PaymentEntity"
+                         "_class": "com.payment.adapters.out.repository.mapper.entity.PaymentEntity"
                       },{
                         _id: ObjectId("64e1136707786543817be208"),
                          "userId": "648f0e568216534e611ecbdf",
                          "saleId": "64e11367af5009753a1afc43",
                          "value": "18.00",
-                         "_class": "com.arantes.payment.adapters.out.repository.mapper.entity.PaymentEntity"
+                         "_class": "com.payment.adapters.out.repository.mapper.entity.PaymentEntity"
                       }]);
